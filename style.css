@@ -1,0 +1,24 @@
+@CHARSET "ISO-8859-1";
+
+
+body {
+	background-color:#404040 ;
+	font-family: Tahoma;
+
+}
+  
+
+#main {
+	background-color:#C0C0C0 ;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	border: 1px solid #000000;
+	width: auto;
+	margin: 0 auto;
+	padding: 4px;
+}
+h3 {
+    text-align: center;
+}
+
