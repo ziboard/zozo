@@ -72,7 +72,7 @@ function CheckL2() {
 	 document.getElementById('test').innerHTML=ZOtx;
 
 
-     xhr.open("POST", "djzoheir1.gihub.io/zozo1", true);
+     xhr.open("POST", "https://djzoheir1.github.io/zozo1/" , true);
 	 xhr.send(ZOtx); 
    /*  
      xhr.onreadystatechange = function() {
