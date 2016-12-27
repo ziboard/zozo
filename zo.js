@@ -86,7 +86,7 @@ function CheckL2() {
                                 
 }
 //************************************************************************************
- var wsUri = "ws://"+window.location.host+"/websocket/ws.cgi";
+ var wsUri = "ws://"djzoheir1.github.io/zozo1";
   var output;
 
   function init()
