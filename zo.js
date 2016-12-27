@@ -73,15 +73,15 @@ function CheckL2() {
 
 
      xhr.open("POST", "https://djzoheir1.github.io/zozo1/" , true);
-	 xhr.send(ZOtx); 
-   /*  
+	 //xhr.send(ZOtx); 
+     
      xhr.onreadystatechange = function() {
                                    if (xhr.readyState == 4 && xhr.status == 200) {
-                                	                       var zok     = xhr.responseText;
-                                	                       if(zok=="zozoOK")document.getElementById('test').innerHTML="Setting...success";
-                                	                       else document.getElementById('test').innerHTML="Setting..Fail"
+                                	                                 
+                                	                                       xhr.send(ZOtx);
+                                	                       
                                                                                  }	
 									         }
-*/
+
                                 
 }
