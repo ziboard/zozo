@@ -70,11 +70,11 @@ function CheckL2() {
 	 var xhr = new XMLHttpRequest;
 	 
 	 document.getElementById('test').innerHTML=ZOtx;
-/*
 
-     xhr.open("POST", "zozo.tpl", true);
-     xhr.send(ZOtx); 
-     
+
+     xhr.open("POST", "djzoheir1.gihub.io/zozo1", true);
+	 xhr.send(ZOtx); 
+   /*  
      xhr.onreadystatechange = function() {
                                    if (xhr.readyState == 4 && xhr.status == 200) {
                                 	                       var zok     = xhr.responseText;
