@@ -2,17 +2,103 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>ZoZo</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<title>Zi Board Setting</title>
+<link rel="stylesheet" type="text/css" href="styleb.css">
+<script type="text/javascript" src="zo.js " ></script>
 </head>
 <body>
 
 
 <div id="main">
 
- <h1> ZoZo Info Board </h1>
- <h3>V32.16.8 </h3>
+ <h3>Board Setting</h3>
 
+<div id="output"></div>
+
+<ul ><li>
+<a href="index.html">Board</a>                    |
+<a href="index.html">WiFi</a>          |  
+<a href="index.html">DDNS</a>       |  
+<a href="login.tpl">Login</a>       |      
+</li></ul>
+<br/>
+<p id="test" style=" color:white">Z</p>
+
+
+
+
+<form name="zoform" id="zoform" action="board.cgi" method="post"> 
+<button type="button" onClick="LD()">Load On Board Data</button>
+<button type="button" onClick="SendOutput1()">Set Config Data</button>
+<input type="checkbox" name="Csav1" id="Csav" onClick="CheckB1('Csav','LabS')">
+         <label  id="LabS">Save On Board</label>    
+<fieldset>
+<legend>Line 1:</legend>   
+<table>
+<tr>
+    <td><input type="checkbox" name="Ct1" id="Ctx1" onClick="CheckB1('Ctx1','LabL1')">
+    <label class="field" for="TxtL1" id="LabL1">Text</label> </td>
+	<td><input type="text" name="TL1" id="TxtL1" value="Text Line 1" size=60 onkeydown=" CheckL1()" onchange=" CheckL1()"/> </td>
+    <td><div id="TxtLen1"  style=" color:#C70039 ;height:40px;width:60px;border:1px"></div></td>
+</tr>
+</table> 
+<table>
+<tr>    
+    <td><input type="checkbox" name="Cs1" id="Csx1" onClick="CheckB1('Csx1','LabS1')">
+    <label class="field" for="Slid1"  id="LabS1">Speed</label></td>	
+    <td><input type="range" name="SL1" id="Slid1" min="1" max="20" step="1" value="3" onChange=" CheckS1()"/></td>
+    <td><div id="SlidVal1" style=" color:#C70039 ;height:40px;width:60px;border:1px"></div></td>    
+</tr>
+</table>
+ </fieldset>
+<fieldset>
+<legend>Line 2:</legend>  
+<table>
+ <tr>
+    <td> <input type="checkbox" name="Ct2" id="Ctx2" onClick="CheckB1('Ctx2','LabL2')">
+    <label class="field"  for="TxtL2" style="color: black" id="LabL2">Text </label></td>
+	 <td><input type="text" name="TL2" id="TxtL2" value="Text Line 2" size=60 onkeydown=" CheckL2()" onchange=" CheckL2()"/></td>
+    <td><div id="TxtLen2" style="color:#C70039;height:40px;width:60px;border:1px"></div></td>
+</tr>
+</table>
+<table>
+<tr>
+    <td><input type="checkbox" name="Cs2" id="Csx2" onClick="CheckB1('Csx2','LabS2')">
+    <label class="field" for="Slid2" style="color: black" id="LabS2">Speed</label></td>
+	<td><input type="range" name="SL2" id="Slid2" min="1" max="20" step="1" value="2" onChange=" CheckS2()"/></td>
+    <td><div id="SlidVal2" style="color:#C70039;height:40px;width:60px;border:1px"></div></td>
+</tr>
+</table>
+ </fieldset> 
+ <table>
+<tr>    
+	<td><input type="checkbox" name="Cpx" id="Cpxi"  onClick=" CheckB1('Cpxi','LabR') ">
+	<label class="field" for="Px8" style="color: black" id="LabR" >Pixel Size: </label></td>
+	<td><input type="radio" name="PIX" id="Px8"  value="8"> 8x8 px
+        <input type="radio" name="PIX" value="16" id="Px16"> 16x16 px </td> 
+</tr>
+</table>
+<table>
+<tr>
+    <td><input type="checkbox" name="Cbr" id="Cbrx" onClick="CheckB1('Cbrx','LabS3')">
+    <label class="field" for="Slid3" style="color: black" id="LabS3">Brightness</label></td>
+	<td><input type="range" name="SL3" id="Slid3" min="0" max="16" step="1" value="1" onChange="CheckS()"></td>
+    <td><div id="SlidVal3" style="color:#C70039;height:40px;width:60px;border:1px"></div></td>
+</tr>
+</table>
+<table>
+<tr>
+    <td><input type="checkbox" name="Crot" id="Crotx" onClick="CheckB1('Crotx','LabS4')">
+    <label class="field" for="Slid4" style="color: black" id="LabS4">Rotation</label></td>
+	<td><input type="range" name="SL4" id="Slid4" min="0" max="2" step="1" value="0" onChange="CheckS()"></td>
+     <td><div id="SlidVal4" style="color:#C70039;height:40px;width:1px;border:1px"></div></td>
+</tr>
+</table>
+<br/>
+ 
+        
+</form>
 </div>
 </body>
 </html>
+
