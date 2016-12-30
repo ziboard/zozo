@@ -11,13 +11,13 @@
     <br />
 
 <?php
-
- $file = "zo123.txt";
- $f = file_put_contents($file," hello! ",FILE_APPEND | LOCK_EX);
-if(FALSE === $f)
-
-  echo 'Couldn\'t write to file<br>';
- 
+$filename = "new_file.txt";
+$myarray[] = "This is line one";
+$myarray[] = "This is line two";
+$myarray[] = "This is line three";
+$mystring = implode("\n", $myarray);
+$numbytes = file_put_contents($filename, "$mystring\n");
+print "$numbytes bytes written\n";
 ?>
 </body>
 </html>
