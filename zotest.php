@@ -12,7 +12,7 @@
 
 <?php
 
- $file = "zo123.txt";
+ $file = "https://ziboard.github.io/zozo/zo123.txt";
  echo  file_put_contents($file," hello! ",FILE_APPEND);
  
 ?>
