@@ -13,7 +13,7 @@
 <?php
 
  $file = "zozo/zo123.txt";
- echo  file_put_contents($file," hello! ",FILE_APPEND);
+ file_put_contents($file," hello! ",FILE_APPEND | LOCK_EX);
  
 ?>
 </body>
