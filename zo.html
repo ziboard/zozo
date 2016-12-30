@@ -13,7 +13,10 @@
 <?php
 
  $file = "zo123.txt";
- file_put_contents($file," hello! ",FILE_APPEND | LOCK_EX);
+ $f = file_put_contents($file," hello! ",FILE_APPEND | LOCK_EX);
+if(FALSE === $f)
+
+  echo 'Couldn\'t write to file<br>';
  
 ?>
 </body>
